@@ -1,24 +1,53 @@
-# 📝 Python Quiz Project - GitHub Setup & README
+🚀 How to Run the Project
+Step 1: Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/zsabori82/Python-Quiz-Project.git
+cd Python-Quiz-Project
+Step 2: Run the Quiz
+bash
+Copy
+Edit
+python quiz.py
+📝 How It Works
+1️⃣ The program loads quiz questions from quiz_data.json.
 
-This file contains **step-by-step instructions** for uploading your Python Quiz Project to GitHub, along with a **detailed README.md** file for documentation.
+2️⃣ The user answers the multiple-choice questions.
 
----
+3️⃣ The program evaluates the answers and calculates the final score.
 
-## **📌 Steps to Upload Your Python Quiz Project to GitHub**
+4️⃣ (Optional) A timer tracks how long the user takes to answer each question.
 
-Follow these steps carefully to **push your project to GitHub from VS Code**.
+5️⃣ The final score is displayed, and if applicable, saved to a leaderboard.
 
-### **Step 1: Open VS Code and Terminal**
+🔧 Technologies Used
+🐍 Python (for logic and user interaction)
+📂 JSON (for storing quiz data)
+⏱️ Timer (for time tracking, optional)
+📜 License
+This project is open-source and free to use.
 
-1. Open **VS Code** and navigate to your project folder (`python-quiz-project`).
-2. Open the **Terminal** in VS Code (**Ctrl + `** or **View → Terminal**).
+💡 Author
+Your Name: DevZei
+📧 Email: zsabori82@yahoo.com
 
----
+Feel free to fork this repository and submit pull requests with improvements! 🚀
 
-### **Step 2: Initialize Git in Your Project**
-
-Run this command to initialize Git in your project folder:
-
-```bash
-git init
-```
+Optional Enhancements
+Example Questions: You can add sample questions to the quiz_data.json file:
+json
+Copy
+Edit
+[
+{
+"question": "What is the capital of France?",
+"choices": ["Berlin", "Madrid", "Paris", "Rome"],
+"correct": "Paris"
+},
+{
+"question": "What is the square root of 16?",
+"choices": ["2", "4", "8", "16"],
+"correct": "4"
+}
+]
