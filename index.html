@@ -141,7 +141,6 @@
             ]
         };
 
-        let userAnswers = [];
         let score = 0;
 
         function displayQuestions() {
@@ -171,6 +170,8 @@
 
         function submitQuiz() {
             score = 0;
+
+            // Check each question answer
             quizData.questions.forEach((q, idx) => {
                 const selectedOption = document.querySelector(`input[name="q${idx}"]:checked`);
                 if (selectedOption && selectedOption.value === q.answer) {
@@ -178,11 +179,13 @@
                 }
             });
 
+            // Display score and hide submit button
             document.getElementById('score').textContent = `${score}/${quizData.questions.length}`;
             document.getElementById('score-container').style.display = 'block';
             document.getElementById('submit-btn').disabled = true;
         }
 
+        // Display questions when the page loads
         displayQuestions();
     </script>
 </body>
